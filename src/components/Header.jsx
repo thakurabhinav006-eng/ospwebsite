@@ -16,7 +16,7 @@ const Header = () => {
             minHeight: '60vh'
         }}>
             <div className="container">
-                <img src="/logo.png" alt="OSP Services Ltd" style={{ width: '220px', marginBottom: '30px', filter: 'brightness(0) invert(1)' }} />
+                <img src="/logo-v2.png" alt="OSP Services Ltd" style={{ width: '220px', marginBottom: '30px', filter: 'brightness(0) invert(1)' }} />
                 <h1 style={{ fontSize: '3rem', fontWeight: '800', marginBottom: '1rem', maxWidth: '800px' }}>
                     Reliable, Affordable Cloud Services for UK & EU Small Businesses
                 </h1>
