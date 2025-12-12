@@ -24,7 +24,7 @@ const Header = () => {
             boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
         }}>
             {/* Top Navigation Bar */}
-            <div style={{
+            <div className="header-container" style={{
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',
@@ -32,14 +32,14 @@ const Header = () => {
             }}>
                 {/* Left: Logo */}
                 <div style={{ display: 'flex', alignItems: 'center' }}>
-                    <Link to="/">
-                        <img src="/logo-hero.png" alt="OSP" style={{ width: '50px', objectFit: 'contain' }} />
+                    <Link to="/" className="logo-frame">
+                        <img src="/logo-hero.png" alt="OSP" style={{ width: '40px', objectFit: 'contain' }} />
                     </Link>
                 </div>
 
                 {/* Right: Navigation */}
                 <nav style={{ display: 'flex' }}>
-                    <ul style={{ display: 'flex', gap: '40px', margin: 0, padding: 0 }}>
+                    <ul className="nav-list" style={{ display: 'flex', gap: '40px', margin: 0, padding: 0 }}>
                         <li><Link to="/" style={linkStyle('/')}>Home</Link></li>
                         <li><Link to="/services" style={linkStyle('/services')}>Services</Link></li>
                         <li><Link to="/about" style={linkStyle('/about')}>About Us</Link></li>
