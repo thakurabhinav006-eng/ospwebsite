@@ -167,6 +167,49 @@ button {
   transform: scale(1.05);
 }
 
+/* Glass Header */
+.glass-header {
+  background: rgba(11, 17, 32, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.header-cta {
+  background: var(--primary-blue);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 15px rgba(0, 86, 255, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.header-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 86, 255, 0.4);
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
 
@@ -178,9 +221,13 @@ button {
   }
 
   .nav-list {
-    gap: 20px !important;
+    gap: 15px !important;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .header-actions {
+    margin-top: 10px;
   }
 
   /* Typography */
