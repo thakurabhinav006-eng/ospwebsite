@@ -150,13 +150,16 @@ button {
 .logo-frame {
   background: white;
   border-radius: 50%;
-  padding: 5px;
+  padding: 8px;
+  /* Slightly more breathing room but larger container */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  /* Increased size */
+  height: 80px;
+  /* Increased size */
   transition: transform 0.3s ease;
 }
 

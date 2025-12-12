@@ -33,7 +33,7 @@ const Header = () => {
                 {/* Left: Logo */}
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Link to="/" className="logo-frame">
-                        <img src="/logo-hero.png" alt="OSP" style={{ width: '40px', objectFit: 'contain' }} />
+                        <img src="/logo-hero.png" alt="OSP" style={{ width: '60px', objectFit: 'contain' }} />
                     </Link>
                 </div>
 
