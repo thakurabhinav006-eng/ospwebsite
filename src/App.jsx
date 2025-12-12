@@ -1,23 +1,29 @@
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
-import Services from './components/Services'
-import Pricing from './components/Pricing'
-import About from './components/About'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
-import './index.css' // Ensure global styles are applied
+import Home from './pages/Home'
+import ServicesPage from './pages/ServicesPage'
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
+import './index.css'
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <main>
-        <Services />
-        <Pricing />
-        <About />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="app">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 

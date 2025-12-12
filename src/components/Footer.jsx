@@ -38,7 +38,7 @@ const Footer = () => {
 
                 {/* Social Icons */}
                 <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginBottom: '40px' }}>
-                    <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="WhatsApp">
+                    <a href="https://wa.me/919823101112" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="WhatsApp">
                         <FaWhatsapp />
                     </a>
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Facebook">
