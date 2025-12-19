@@ -16,13 +16,13 @@ const Contact = () => {
     return (
         <section id="contact" className="section" style={{ background: 'var(--bg-light)' }}>
             <div className="container">
-                <h2 className="section-title">Contact Us</h2>
+                <h2 className="section-title animate-fade-in-up">Contact Us</h2>
                 <div style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
                     gap: '50px'
                 }}>
-                    <div>
+                    <div className="animate-slide-in-left">
                         <h3 style={{ fontSize: '1.5rem', marginBottom: '20px' }}>Get in Touch</h3>
                         <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
                             <strong>Email:</strong> info@osp-services.com<br />
@@ -31,7 +31,7 @@ const Contact = () => {
                         </p>
                         <img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1600&q=80" alt="Contact Us" style={{ width: '100%', borderRadius: '12px' }} />
                     </div>
-                    <div style={{ background: 'white', padding: '30px', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}>
+                    <div className="animate-slide-in-right glass-panel" style={{ padding: '40px', borderRadius: '12px' }}>
                         <form onSubmit={handleSubmit}>
                             <div className="mb-4">
                                 <label style={{ display: 'block', marginBottom: '8px', fontWeight: '500' }}>Name</label>
@@ -66,7 +66,7 @@ const Contact = () => {
                                     style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid #ddd' }}
                                 ></textarea>
                             </div>
-                            <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>Send Message</button>
+                            <button type="submit" className="btn btn-primary btn-premium hover-scale" style={{ width: '100%' }}>Send Message</button>
                         </form>
                     </div>
                 </div>

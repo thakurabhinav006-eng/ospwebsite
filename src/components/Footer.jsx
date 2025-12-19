@@ -1,10 +1,10 @@
 import React from 'react'
 import { FaWhatsapp, FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
+import Reveal from './Reveal'
 
 const Footer = () => {
     return (
-        <footer style={{
-            background: 'var(--dark-blue)',
+        <footer className="footer-holographic" style={{
             color: 'white',
             padding: '80px 0 30px',
             textAlign: 'center',
@@ -39,26 +39,26 @@ const Footer = () => {
                     gap: '60px',
                     marginBottom: '40px'
                 }}>
-                    <div className="footer-col text-center">
+                    <Reveal className="footer-col text-center" animation="animate-fade-in-up">
                         <h3 style={{ fontSize: '1.8rem', marginBottom: '10px', fontWeight: 'bold' }}>OSP Services Ltd</h3>
                         <p style={{ opacity: '0.8', fontSize: '1.1rem' }}>Your Trusted Cloud Partner for SMBs</p>
-                    </div>
+                    </Reveal>
 
-                    <div className="footer-col text-center">
+                    <Reveal className="footer-col text-center" animation="animate-fade-in-up" delay="0.2s">
                         <h4 style={{ marginBottom: '20px', fontSize: '1.2rem' }}>Connect With Us</h4>
                         {/* Social Icons */}
                         <div style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
-                            <a href="https://wa.me/919823101112" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="WhatsApp">
+                            <a href="https://wa.me/919823101112" target="_blank" rel="noopener noreferrer" className="social-icon hover-float" aria-label="WhatsApp">
                                 <FaWhatsapp />
                             </a>
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Facebook">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon hover-float" aria-label="Facebook">
                                 <FaFacebookF />
                             </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon hover-float" aria-label="LinkedIn">
                                 <FaLinkedinIn />
                             </a>
                         </div>
-                    </div>
+                    </Reveal>
                 </div>
 
 
